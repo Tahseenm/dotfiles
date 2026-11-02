@@ -20,8 +20,7 @@ missing; finish that installation and rerun bootstrap. Bootstrap may ask for
 administrator access.
 
 ```sh
-# Replace <this-repo> with the repository URL.
-git clone "<this-repo>" ~/.dotfiles
+git clone "https://github.com/Tahseenm/dotfiles" ~/.dotfiles
 cd ~/.dotfiles
 
 # Install Homebrew and the provisioning tools.
@@ -31,7 +30,7 @@ cd ~/.dotfiles
 HOST=mac-mini ./install.sh
 
 # Generate a personal SSH key and register it with GitHub.
-./github-ssh.sh --title mac-mini
+./github-ssh.sh --title "Macbook Pro"
 ```
 
 For `macbook`, sign into the App Store before running install, including dry
