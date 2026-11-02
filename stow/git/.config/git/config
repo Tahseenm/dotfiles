@@ -1,0 +1,68 @@
+[user]
+	name = Tahseen Malik
+	email = tahseen.m@outlook.com
+[init]
+	defaultBranch = main
+[core]
+	editor = micro
+	pager = delta
+
+
+# 
+# Push and pull settings
+# 
+
+[push]
+	default = simple
+	autoSetupRemote = true        # first `git push` just works, no -u
+[pull]
+	ff = only                     # never accidentally create merge commits on pull
+[fetch]
+	prune = true                  # remove remote-tracking branches that no longer exist on the remote
+
+
+# 
+# Better diff and conflict settings
+# 
+
+[merge]
+	conflictstyle = zdiff3      # shows the common ancestor inline — much easier
+[diff]
+	algorithm = histogram       # nicer, more stable hunks than the default
+	colorMoved = zebra
+[rerere]
+	enabled = true              # reuse resolutions for repeated conflicts
+
+
+# 
+# Better output for git commands
+# 
+
+[help]
+	autocorrect = prompt
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate       # most recent branches first
+[tag]
+	sort = version:refname
+[status]
+	showUntrackedFiles = all
+[rebase]
+	autosquash = true           # works with your existing fixup! commits
+[log]
+	date = relative
+
+
+# 
+# Delta is a syntax-highlighting pager for git and diff output
+# https://github.com/dandavison/delta
+#
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	dark = true
+	line-numbers = true

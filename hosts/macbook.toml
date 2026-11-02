@@ -1,0 +1,7 @@
+# Main workstation.
+
+[brew]
+file = "brew/Brewfile.mac"
+
+[stow]
+packages = ["zsh", "git", "ohmyposh", "btop", "micro", "ghostty", "lazygit"]

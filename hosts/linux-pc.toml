@@ -1,0 +1,7 @@
+# Headless Ubuntu mini PC.
+
+[brew]
+file = "brew/Brewfile.headless-linux"
+
+[stow]
+packages = ["zsh", "git", "ohmyposh", "btop", "micro", "lazygit"]

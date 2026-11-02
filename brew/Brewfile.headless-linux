@@ -1,0 +1,12 @@
+# Headless Ubuntu machine
+#
+# install.sh installs Brewfile.base first, then this file.
+#
+# Every formula in Brewfile.base has Linux bottles, and Homebrew/Linux uses the
+# same formula names as macOS, so no renames are needed.
+
+# Required by Bun's installer. macOS already ships /usr/bin/unzip.
+brew "unzip"
+
+# Tailscale CLI daemon (headless; no GUI).
+brew "tailscale"

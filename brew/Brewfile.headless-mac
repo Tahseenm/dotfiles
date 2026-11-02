@@ -1,0 +1,20 @@
+# Headless Mac mini
+#
+# install.sh installs Brewfile.base first, then this file.
+#
+# No general-purpose GUI apps. BetterDisplay is the one GUI cask required: it
+# is used to create a virtual display on the headless machine.
+
+tap "teamookla/speedtest", trusted: true
+
+brew "mas"                                     # Mac App Store command-line interface
+brew "tailscale"                               # Tailscale CLI daemon (headless; no GUI)
+brew "teamookla/speedtest/speedtest"           # Ookla Speedtest
+
+# GUI applications
+cask "betterdisplay"     # Create virtual displays for headless mac use
+cask "rustdesk"          # Remote desktop (unattended access)
+
+# Fonts
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"

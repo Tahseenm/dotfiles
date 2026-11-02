@@ -1,0 +1,7 @@
+# Headless Mac mini.
+
+[brew]
+file = "brew/Brewfile.headless-mac"
+
+[stow]
+packages = ["zsh", "git", "ohmyposh", "btop", "micro", "ghostty", "lazygit"]

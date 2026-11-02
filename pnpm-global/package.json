@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "fkill-cli": "latest",
+    "serve": "latest"
+  }
+}

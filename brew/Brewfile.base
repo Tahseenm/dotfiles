@@ -1,0 +1,30 @@
+# Shared Homebrew Bundle for every host.
+#
+# Formulae only. No casks here -- casks are macOS GUI apps and live in the
+# per-host Brewfiles.
+#
+# Language runtimes (Node, Bun, Python) are intentionally NOT listed.
+# Node is managed by fnm, Bun by ~/.bun, pnpm via PNPM_HOME; see README.
+
+tap "jandedobbeleer/oh-my-posh", trusted: true
+
+brew "bat"           # cat clone with syntax highlighting
+brew "btop"          # Resource monitor
+brew "eza"           # Modern replacement for ls
+brew "fastfetch"     # Display system specs
+brew "fd"            # Simple, fast, user-friendly alternative to find
+brew "fnm"           # Fast and simple Node.js version manager
+brew "fzf"           # Command-line fuzzy finder
+brew "gh"            # GitHub CLI tool
+brew "git"           # Distributed revision control system
+brew "git-delta"     # Syntax-highlighting pager for git and diff output
+brew "herdr"         # Agent multiplexer for terminal
+brew "lazygit"       # Terminal UI for git
+brew "micro"         # Modern terminal-based text editor
+brew "shellcheck"    # Static analysis & lint tool for (ba)sh scripts
+brew "tokei"         # Counts lines of code, quickly
+brew "yt-dlp"        # Video downloader
+brew "zoxide"        # Shell extension to navigate your filesystem faster
+
+# Third party packages
+brew "jandedobbeleer/oh-my-posh/oh-my-posh"    # Prompt theme engine
