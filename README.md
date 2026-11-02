@@ -1,5 +1,7 @@
 # Dotfiles
 
+![One dotfiles repository connected to a MacBook, Mac mini, and Ubuntu mini PC](docs/images/Dotfiles.png)
+
 Personal macOS and Ubuntu setup managed with **GNU Stow** for configuration
 symlinks and **Homebrew Bundle** for packages. Scripts install the tools and
 configs for each host, then print the remaining sign-ins and manual setup.
