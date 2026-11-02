@@ -27,7 +27,7 @@ cd ~/.dotfiles
 ./bootstrap.sh
 
 # Choose your host from the table below.
-HOST=mac-mini ./install.sh
+HOST=macbook ./install.sh
 
 # Generate a personal SSH key and register it with GitHub.
 ./github-ssh.sh --title "Macbook Pro"
