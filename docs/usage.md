@@ -153,9 +153,9 @@ GitHub account only.
 ### `macos-defaults.sh`
 
 ```sh
-bash macos-defaults.sh            # preview planned commands (default)
-bash macos-defaults.sh --apply    # back up, then write preferences
-bash macos-defaults.sh --check    # compare stored values with the profile
+./macos-defaults.sh            # preview planned commands (default)
+./macos-defaults.sh --apply    # back up, then write preferences
+./macos-defaults.sh --check    # compare stored values with the profile
 ```
 
 Applies a curated set of macOS preference tweaks to the current machine.

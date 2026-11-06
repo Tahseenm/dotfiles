@@ -27,11 +27,11 @@ Use these checks when changing provisioning scripts or configuration. See the
 - [ ] `brew`, `node`, `pnpm`, and `bun` resolve in a new login shell and
       `node --version`, `pnpm --version`, and `bun --version` succeed.
 - [ ] `./doctor.sh` reports no drift.
-- [ ] `bash macos-defaults.sh --dry-run` prints the planned commands and
+- [ ] `./macos-defaults.sh --dry-run` prints the planned commands and
       changes nothing.
-- [ ] `bash macos-defaults.sh --apply` writes the preferences and creates a
+- [ ] `./macos-defaults.sh --apply` writes the preferences and creates a
       timestamped backup directory; after logging out and back in,
-      `bash macos-defaults.sh --check` reports no differences and exits 0.
+      `./macos-defaults.sh --check` reports no differences and exits 0.
 - [ ] On a machine that has not applied the profile, `--check` lists the
       differences and exits non-zero.
 - [ ] Run the printed manual steps (gh, Tailscale, GUI app permissions). On the

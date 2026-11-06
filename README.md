@@ -38,7 +38,7 @@ HOST=macbook ./install.sh
 For `macbook`, sign into the App Store before running install, including dry
 runs. After installation, complete the printed manual steps, also saved to
 `manual-steps.md` (git-ignored and overwritten on each install). On either Mac,
-optionally apply the curated preference tweaks with `bash macos-defaults.sh`
+optionally apply the curated preference tweaks with `./macos-defaults.sh`
 (preview with `--dry-run`, then `--apply`; see
 [macOS defaults](docs/usage.md#macos-defaultssh)). Open a new login shell, then
 run `./doctor.sh` to check for drift.
@@ -64,8 +64,8 @@ Run from `~/.dotfiles`, replacing `mac-mini` with your host:
 HOST=mac-mini ./install.sh --dry-run  # Preview changes
 HOST=mac-mini ./install.sh            # Install or reapply configuration
 ./doctor.sh                           # Report package and symlink drift
-bash macos-defaults.sh --dry-run      # Preview macOS preference tweaks (macOS only)
-bash macos-defaults.sh --apply        # Back up and apply them (macOS only)
+./macos-defaults.sh --dry-run      # Preview macOS preference tweaks (macOS only)
+./macos-defaults.sh --apply        # Back up and apply them (macOS only)
 ```
 
 Install preserves existing runtimes and coding agents on repeat runs. Doctor

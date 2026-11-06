@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Portable, curated preferences observed on this Mac on 2026-11-01.
 # Source: macOS 27.0.1 (26A434), Apple Silicon.
 # This is NOT an exhaustive factory-default diff.
@@ -7,7 +7,7 @@ set -euo pipefail
 
 usage() {
     cat <<'HELP'
-Usage: bash macos-defaults.sh [--dry-run | --apply | --check]
+Usage: ./macos-defaults.sh [--dry-run | --apply | --check]
   --dry-run  Print planned commands; change nothing (default).
   --apply    Back up affected preference domains, then apply settings.
   --check    Compare stored values with this profile; change nothing.
